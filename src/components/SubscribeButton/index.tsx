@@ -6,7 +6,7 @@ interface SubscribeButtonProps {
 }
 
 export function SubscribeButton({ priceId }: SubscribeButtonProps) {
-  const [session] = useSession();
+  const [session] = useSession(); // logado = true, deslogado = false
 
   function handleSubscribe() {
     if (!session) {
